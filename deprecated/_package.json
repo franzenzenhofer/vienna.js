@@ -1,0 +1,45 @@
+{
+  "version": "0.0.1",
+  "name": "yet-another-coffeescript-skeleton",
+  "description": "simple cs skeleton",
+  "keywords": [
+    "coffee script",
+    "skeleton"
+  ],
+  "preferGlobal": false,
+  "config": {
+    "publishtest": false
+  },
+  "homepage": "http://www.fullstackoptimization.com/",
+  "author": "Franz Enzenhofer <fe@fullstackoptimization.com> (http://twitter.com/enzenhofer)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franzenzenhofer/yet-another-coffeescript-skeleton.git"
+  },
+  "bugs": {
+    "email": "fe@fullstackoptimization.com",
+    "url": "https://github.com/franzenzenhofer/yet-another-coffeescript-skeleton.git"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0a"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0a",
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-nodeunit": "~0.1.0",
+    "grunt-contrib-htmlmin": "~0.1.0"
+
+  },
+  "bundleDependencies": [
+    "grunt"
+  ]},
+  "engines": {
+    "node": ">=0.8",
+    "npm": "1"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

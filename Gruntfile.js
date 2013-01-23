@@ -45,6 +45,7 @@ module.exports = function(grunt) {
     }
   }
 },
+
   watch: {
     js: {
       files: js_to_watch,
@@ -57,6 +58,10 @@ module.exports = function(grunt) {
     html: {
       files: 'html/src/index.html',
       tasks: ['htmlmin']
+    },
+    img: {
+      files: 'img/src/*',
+      tasks: ['pngmin','gifmin','jpgmin']
     }
   }
   });
@@ -67,6 +72,27 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-mincss');
+ // grunt.loadNpmTasks('grunt-imagine'); // outdated version
+ /*
+pngmin: {
+  src: [
+    'img/src/*.png',
+  ],
+  dest: 'img/opt'
+},
+gifmin: {
+  src: [
+    'img/src/*.gif',
+  ],
+  dest: 'img/opt'
+},
+jpgmin: {
+  src: [
+    'img/src/*.gif',
+  ],
+  dest: 'img/opt'
+},
+ */
 
   // Default task(s).
   grunt.registerTask('default', ['concat','uglify', 'htmlmin']);

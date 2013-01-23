@@ -2,9 +2,9 @@ express = require('express')
 http = require('http')
 app = express();
 server = http.createServer(app)
-io = require('socket.io').listen(server)
+#io = require('socket.io').listen(server)
 
-port = if process.env.PORT then process.env.PORT else 3000
+port = if process.env.PORT then process.env.PORT else 3340
 
 app.use(express.static(__dirname + '/public'));
 app.enable('trust proxy')
@@ -14,13 +14,13 @@ app.enable('trust proxy')
 #  res.send('Hello World')
 #)
 
-io.sockets.on('connection', (socket) ->
-  socket.emit('news', { hello: 'world' })
-  
-  socket.on('my other event', (data) -> 
-    console.log(data)
-  )
-)
+#io.sockets.on('connection', (socket) ->
+#  socket.emit('news', { hello: 'world' })
+#  
+#  socket.on('my other event', (data) -> 
+#    console.log(data)
+#  )
+#)
 
 
 

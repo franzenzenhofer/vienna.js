@@ -5,22 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>vienna JS</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="http://www.viennajs.org/">
-
         <link rel="apple-touch-icon" href="i/apple-touch-icon-precomposed.png" /> 
         <link rel="apple-touch-icon" sizes="72x72" href="i/apple-touch-icon-72x72-precomposed.png" /> 
         <link rel="apple-touch-icon" sizes="114x114" href="i/apple-touch-icon-114x114-precomposed.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="i/apple-touch-icon-144x144-precomposed.png" />
 
         <style type="text/css">
-            body{background:#202020; color:lightgray; font-family:Verdana, Times, serif;}
+            body{background:#202020; color:lightgray; font-family:Verdana, Times, serif; margin:5px;}
             a{color:lightgray;}
             #logo{width:360px;height:360px;margin:2%;}
             #signup{}
             .requiredemail {width:360px;height:25px;line-height:25px;display:block;} 
             .button { height:30px; width:368px; margin-top:10px; display:block;}
-
+            #announcement {max-width:360px;}
+            #meetuplist {max-width:360px;text-align:left; margin-top:10px;}
+            #next_meetup {border-bottom:1px solid lightgray;}
+            #questions {max-width:360px; font-size:70%;}
         </style>
 <!-- <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -34,8 +36,8 @@
             <div id="logo">
                 <a href="http://www.meetup.com/viennajs/"><img src="i/viennajs-logo.png" alt="viennajs"></a>
             </div>
-            <div>
-                Every last Wednesday of the month - 19:00
+            <div id="announcement">
+                Every last Wednesday of the month - 19:00&nbsp;@&nbsp;<a href="http://www.clusterhaus.at/contact.html">clusterhaus wien</a>
                 <br>Follow&nbsp;<a href="http://twitter.com/viennajs">@viennajs</a>&nbsp;for announcements.<br><br>
             </div>
             <!-- Begin MailChimp Signup Form -->
@@ -47,6 +49,38 @@
 </div>
 
 <!--End mc_embed_signup-->
+<div id="meetuplist">
+    <div id="next_meetup">
+        <ul>
+            <li>Next Meetup:&nbsp;<i>Wednesday, March 27, 2013</i></li>
+            <li>Please&nbsp;<a href="http://www.meetup.com/viennajs/events/104270042/">RSVP "yes" on meetup.com</a>&nbsp;for this meetup.</i></li>
+            <li>Limited to 30 attendees due to physical available space.</li>
+            <li>Sign-up for the waiting list, if you are attendee 31 or higher.</li>
+        </ul>
+    </div>
+    <div id="prior_meetups">
+        <ul>
+            <li>
+                <ul>
+                    <li>Last Meetup:&nbsp;<a href="http://www.meetup.com/viennajs/events/96929872/">Wednesday, February 27, 2013</a></li>
+                    <li>Talks:
+                        <ul>
+                            <li>Franz Enzenhofer -&nbsp;<a href="https://github.com/franzenzenhofer/webcam2favicon">Webcam2Favicon Literate Programming</a></li>
+                            <li>Nik Sumeiko -&nbsp;<a href="http://www.slideshare.net/manakor/html5-canvas-finger-lottery-ticket-eraser ">HTML5 Canvas finger lottery ticket eraser</a>&nbsp;[<a href="https://github.com/manakor/html5-canvas-finger-lottery-ticket-eraser">Github</a>] [<a href="http://manakor.org/experiments/html5-canvas-finger-lottery-ticket-eraser/ ">Demo</a>]
+ </li>
+                            <li>Franz Buchinger -&nbsp;<a href="http://dev.tag.is/rawson.js/">Rawson.js</a></li>
+                            <li>Markus Prinz -&nbsp;Javascript bei&nbsp;<a href="http://www.meinkauf.at/">meinkauf.at</a></li>
+                            <li>Thomas Fritz</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+</div>
+<div id="questions">
+    questions? → please use the&nbsp;<a href="http://www.meetup.com/viennajs/messages/boards/">viennajs message board</a>, and only if absolutely necessary contact <pre><npbr>viennajsorg at googles little email service</nobr></pre>
+</div>
         </center>
     </body>
 </html>
